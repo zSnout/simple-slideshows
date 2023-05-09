@@ -67,8 +67,20 @@ directions.
 
 ## Theming
 
-To change the theme of your slideshow, open `.env` and change the `THEME`
-variable.
+To change the theme of your slideshow, open `.astro/src/components/Layout.astro`
+and change the class name of the `<html>` tag to something other than
+`z-slate-light`. Currently, there are ten themes available:
+
+- z-slate-light
+- z-slate-dark
+- z-zinc-light
+- z-zinc-dark
+- z-gray-light
+- z-gray-dark
+- z-neutral-light
+- z-neutral-dark
+- z-stone-light
+- z-stone-dark
 
 If you know CSS, you can also customize your theme by opening `theme.postcss`
 and modifying the styles included in it.
