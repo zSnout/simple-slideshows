@@ -1,10 +1,10 @@
 # Simple Slideshows Starter Kit
 
 Welcome to Simple Slideshows! If you haven't downloaded this project already, do
-so now by running this command and following its prompts.
+so now by running `git clone`.
 
 ```sh
-curl https://raw.githubusercontent.com/zSnout/simple-slideshows/main/install.sh | bash
+git clone https://github.com/zSnout/simple-slideshows.git
 ```
 
 To create new slideshow decks, add Markdown files to the `decks` folder. Simple
@@ -72,3 +72,15 @@ variable.
 
 If you know CSS, you can also customize your theme by opening `theme.postcss`
 and modifying the styles included in it.
+
+## Homepage information
+
+To change the title and subtitle shown on your project's homepage, edit their
+respective variables in `.env`.
+
+## Publishing to Vercel and Netlify
+
+To make working with the repo more ergonomic, the main Astro project underlying
+Simple Slideshows is packed into an `.astro` folder. As such, the project output
+will be located in `.astro/dist`, not `dist`. You may need to configure Vercel,
+Netlify, and other cloud providers to handle this case.
