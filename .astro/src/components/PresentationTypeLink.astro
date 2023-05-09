@@ -1,0 +1,20 @@
+---
+interface Props {
+  href: string
+  title: string
+  subtitle: string
+}
+---
+
+<a
+  class="group w-[calc(50%_-_1rem)] rounded bg-[--z-bg] px-3 py-2 text-center text-lg text-[--z-text] shadow-lg"
+  href={Astro.props.href}
+>
+  <h2
+    class="font-semibold text-[--z-heading] underline-offset-[3px] [text-decoration-thickness:2px] group-hover:underline"
+  >
+    {Astro.props.title}
+  </h2>
+
+  <p class="mt-2 text-left text-sm no-underline">{Astro.props.subtitle}</p>
+</a>

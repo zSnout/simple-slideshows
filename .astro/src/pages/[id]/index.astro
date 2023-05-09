@@ -1,0 +1,51 @@
+---
+import { getCollection, getEntryBySlug } from "astro:content"
+import Layout from "../../components/Layout.astro"
+import PresentationTypeLink from "../../components/PresentationTypeLink.astro"
+
+const entry = (await getEntryBySlug("decks", Astro.params.id!))!
+const headings = (await entry.render()).headings
+const title = headings[0]?.text || "Untitled deck"
+
+export async function getStaticPaths() {
+  const slides = await getCollection("decks")
+
+  return slides.map((x) => ({ params: { id: x.slug } }))
+}
+---
+
+<Layout title={title}>
+  <h1 class="mb-12 text-6xl font-light text-slate-100">{title}</h1>
+
+  <div class="mx-auto flex w-full max-w-md flex-wrap gap-8">
+    <PresentationTypeLink
+      href={"/" + Astro.params.id! + "/preview"}
+      title="Preview"
+      subtitle="Preview this presentation to see all its slides as a scrollable web page."
+    />
+
+    <PresentationTypeLink
+      href={"/" + Astro.params.id! + "/present"}
+      title="Present"
+      subtitle="Present this in fullscreen. Use arrow keys to navigate between slides."
+    />
+
+    <PresentationTypeLink
+      href={"/" + Astro.params.id! + "/document"}
+      title="Document"
+      subtitle="View the slideshow as a formatted document rather than as separated slides."
+    />
+
+    <PresentationTypeLink
+      href={"/" + Astro.params.id! + "/source"}
+      title="Source"
+      subtitle="See the source text used to generate this slideshow."
+    />
+  </div>
+</Layout>
+
+<style is:global>
+  main {
+    @apply flex h-screen flex-col items-center justify-center bg-slate-800;
+  }
+</style>

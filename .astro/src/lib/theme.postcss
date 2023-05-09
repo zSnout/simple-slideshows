@@ -1,0 +1,266 @@
+main > section {
+  @apply bg-[--z-bg];
+
+  &:where(:has(h1)) {
+    @apply items-center justify-center gap-6;
+
+    &:where(:has(p)) {
+      h1 {
+        @apply mt-8;
+      }
+    }
+
+    h1 {
+      @apply text-center text-6xl font-light text-[--z-heading];
+    }
+
+    p {
+      @apply text-lg;
+    }
+  }
+
+  &:where(:has(h2)) {
+    @apply gap-6 py-12;
+
+    h2 {
+      @apply text-3xl text-[--z-heading];
+    }
+
+    p {
+      @apply text-lg;
+    }
+  }
+
+  p + p {
+    @apply -mt-2;
+  }
+
+  & p:has(img[alt^="background"]) {
+    display: contents;
+  }
+
+  & img[alt^="background"] {
+    @apply absolute left-0 top-0 z-10 h-full w-full object-cover;
+
+    &[alt~="b"] {
+      @apply object-bottom;
+    }
+
+    &[alt~="c"] {
+      @apply object-center;
+    }
+
+    &[alt~="l"] {
+      @apply object-left;
+    }
+
+    &[alt~="bl"] {
+      @apply object-left-bottom;
+    }
+
+    &[alt~="tl"] {
+      @apply object-left-top;
+    }
+
+    &[alt~="r"] {
+      @apply object-right;
+    }
+
+    &[alt~="br"] {
+      @apply object-right-bottom;
+    }
+
+    &[alt~="tr"] {
+      @apply object-right-top;
+    }
+
+    &[alt~="t"] {
+      @apply object-top;
+    }
+  }
+
+  &:where(:has(h2):has(img[alt^="background"])) {
+    --cover-width: 3in;
+
+    &::before {
+      content: " ";
+      @apply absolute top-0 z-20 h-full w-[calc(var(--cover-width)_+_6rem)] bg-[--z-bg] opacity-80 odd:left-0 even:right-0;
+    }
+
+    &:nth-child(even) > * {
+      @apply left-[calc(100%_-_var(--cover-width))];
+    }
+
+    > * {
+      @apply relative z-30 max-w-[--cover-width];
+    }
+  }
+
+  &:where(:has(h2):has(table)) {
+    grid-template-columns: auto 50%;
+  }
+
+  &:where(:has(h2):has(table:not(:nth-child(2)))) {
+    grid-template-columns: 50% auto;
+  }
+
+  &:where(:has(h2):has(pre)) {
+    grid-template-columns: auto 40%;
+  }
+
+  &:where(:has(h2):has(pre:not(:nth-child(2)))) {
+    grid-template-columns: 40% auto;
+  }
+
+  &:where(:has(h2):has(table, pre)) {
+    @apply grid;
+    grid-template-rows: auto 1fr;
+
+    > h2 {
+      @apply col-start-1 col-end-3 row-start-1 row-end-2;
+    }
+
+    > table {
+      @apply mb-8 ml-16 mr-10 mt-10;
+    }
+
+    > pre {
+      @apply mr-4 mt-2;
+    }
+
+    > table,
+    > pre {
+      @apply col-start-1 col-end-2 row-start-2 row-end-3;
+    }
+
+    > table:not(:nth-child(2)) {
+      @apply col-start-2 col-end-3;
+      @apply ml-10 mr-16;
+    }
+
+    > pre:not(:nth-child(2)) {
+      @apply col-start-2 col-end-3;
+      @apply ml-4 mr-0;
+    }
+
+    &:has(:last-child:nth-child(4)) {
+      grid-template-rows: auto auto 1fr;
+
+      > table,
+      > pre {
+        @apply row-end-4;
+      }
+    }
+
+    &:has(:last-child:nth-child(5)) {
+      grid-template-rows: auto auto auto 1fr;
+
+      > table,
+      > pre {
+        @apply row-end-5;
+      }
+    }
+
+    &:has(:last-child:nth-child(6)) {
+      grid-template-rows: auto auto auto auto 1fr;
+
+      > table,
+      > pre {
+        @apply row-end-6;
+      }
+    }
+  }
+
+  &:where(:has(h2)) > section:has(> eqn) {
+    @apply my-auto;
+  }
+
+  eqn,
+  strong {
+    @apply text-[--z-heading];
+  }
+
+  table {
+    @apply mb-auto table-auto text-left text-sm;
+    line-height: 1.7142857;
+  }
+
+  thead {
+    @apply border-b border-b-[--z-thead-border];
+
+    th {
+      @apply px-[0.5714286rem] pb-[0.5714286em] align-bottom font-semibold text-[--z-heading] first:pl-0 last:pr-0;
+    }
+  }
+
+  tbody {
+    tr {
+      @apply border-b border-b-[--z-tbody-border] last:border-b-0;
+    }
+
+    td {
+      @apply p-[0.5714286em] align-baseline  first:pl-0 last:pr-0;
+    }
+  }
+
+  code {
+    @apply whitespace-pre text-base font-semibold text-[--z-heading];
+
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+      "Liberation Mono", "Courier New", monospace;
+
+    &:not(pre code)::before,
+    &:not(pre code)::after {
+      content: "`";
+    }
+  }
+
+  pre {
+    @apply overflow-x-auto rounded-md bg-[--z-pre-bg] px-[1.1428571em] py-[0.8571429em] text-sm/[1.7142857] font-normal text-[--z-pre];
+
+    code {
+      @apply text-inherit;
+      font: inherit;
+    }
+  }
+
+  ul,
+  ol {
+    @apply pl-8 text-lg;
+
+    &:has(h3, li > p:not(:only-child) > strong) {
+      li {
+        @apply mb-4 last:mb-0;
+      }
+    }
+
+    li {
+      @apply mb-1 px-1 last:mb-0;
+
+      h3,
+      strong {
+        @apply font-semibold;
+      }
+    }
+  }
+
+  ul {
+    @apply list-disc;
+
+    li::marker {
+      @apply text-[--z-ul-bullet];
+    }
+  }
+
+  ol {
+    @apply list-decimal;
+
+    li::marker {
+      @apply text-[--z-ol-bullet];
+    }
+  }
+
+  a {
+    @apply font-semibold text-[--z-heading] underline underline-offset-2 [text-decoration-thickness:2px];
+  }
+}

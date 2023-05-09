@@ -1,0 +1,16 @@
+html {
+  @apply flex min-h-full w-full select-none flex-col bg-[--z-preview-bg];
+  font-size: 16px;
+}
+
+body {
+  @apply flex min-h-full w-full flex-1 flex-col;
+}
+
+main {
+  @apply flex w-full flex-row flex-wrap justify-center gap-4 p-8 text-base;
+
+  > section {
+    @apply relative flex aspect-video max-h-[5.625in] min-h-[5.625in] min-w-[10in] max-w-[10in] flex-col overflow-hidden rounded px-12 py-8 text-[--z-body] shadow-lg outline-none;
+  }
+}

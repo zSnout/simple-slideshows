@@ -1,0 +1,50 @@
+---
+import { getCollection } from "astro:content"
+import Layout from "../components/Layout.astro"
+
+const entries = await Promise.all(
+  (
+    await getCollection("decks", (entry) => !entry.data.hidden)
+  ).map(async (entry) => ({
+    title: (await entry.render()).headings[0]?.text || "Untitled deck",
+    slug: entry.slug,
+  })),
+)
+
+if (import.meta.env.SORT_METHOD == "TITLE") {
+  entries.sort((a, b) => (a.title < b.title ? -1 : a.title == b.title ? 0 : 1))
+} else if (import.meta.env.SORT_METHOD == "FILE") {
+  entries.sort((a, b) => (a.slug < b.slug ? -1 : a.slug == b.slug ? 0 : 1))
+}
+---
+
+<Layout title={import.meta.env.TITLE}>
+  <h1
+    class="mx-auto mb-4 max-w-prose text-center text-3xl font-light text-slate-100"
+  >
+    {import.meta.env.TITLE}
+  </h1>
+
+  <p class="mx-auto mb-16 max-w-prose text-center text-lg text-slate-400">
+    {import.meta.env.SUBTITLE}
+  </p>
+
+  <div class="mx-auto flex max-w-prose flex-col gap-1">
+    {
+      entries.map((entry) => (
+        <a
+          class="flex flex-row rounded-sm bg-[--z-bg] px-3 py-2 text-[--z-text] first:rounded-t-md last:rounded-b-md"
+          href={`/${entry.slug}`}
+        >
+          {entry.title}
+        </a>
+      ))
+    }
+  </div>
+</Layout>
+
+<style is:global>
+  html {
+    @apply bg-[--z-preview-bg] px-8 py-64 sm:py-16 md:py-48;
+  }
+</style>
