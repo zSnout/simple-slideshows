@@ -217,14 +217,14 @@ To ask someone who they are, say _sina seme?_ Learn more about _seme_
 
 ## Preverbs
 
-| Word      | Definition                 |
-| --------- | -------------------------- |
-| _wile_    | to want, to need           |
-| _lukin_   | to look at, to try to      |
-| _ken_     | possible, to be able to    |
-| _sona_    | knowledge, to know         |
-| _kama_    | coming, future, event      |
-| _sitelen_ | picture, to write, to draw |
+| Word      | Definition                       |
+| --------- | -------------------------------- |
+| _wile_    | to want, to need                 |
+| _lukin_   | to look at, to try to            |
+| _ken_     | possible, to be able to          |
+| _sona_    | knowledge, to know               |
+| _kama_    | coming, event, future, to arrive |
+| _sitelen_ | picture, to write, to draw       |
 
 Preverbs can be placed before a main verb to modify the verb's meaning.
 
@@ -474,7 +474,23 @@ and is not required.
 | ------- | ---------------------------------------- |
 | _tenpo_ | time, temporal                           |
 | _pini_  | completed, done, past, to end, to finish |
-| _kama_  | arrival, future, to arrive, to become    |
+| _kama_  | coming, event, future, to arrive         |
+
+_tenpo_ clauses are often used before _la_ to indicate time.
+
+- _tenpo pini, la mi moku._  
+  **In the context of a finished time, I eat.**  
+  **In the past, I eat.**  
+  **I ate.**
+
+- _tenpo kama, la mi moku._  
+  **In the context of a coming time, I eat.**  
+  **In the future, I eat.**  
+  **I will eat.**
+
+- _tenpo ni, la mi moku._  
+  **In the context of this time, I eat.**  
+  **Now, I eat.**
 
 ## Simple Numbers
 
