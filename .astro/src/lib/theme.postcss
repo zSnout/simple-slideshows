@@ -125,7 +125,6 @@ main > section {
   }
 
   &:where(:has(h2):has(img:not([alt^="background"]))) {
-    @apply gap-x-12;
     grid-template-columns: auto 1fr;
   }
 
@@ -146,8 +145,8 @@ main > section {
     @apply col-start-1 col-end-2 row-start-1 row-end-2;
   }
 
-  &:where(:has(h2):has(table, pre, img:not([alt^="background"]))) {
-    @apply grid;
+  &:where(:has(h2):has(hr, table, pre, img:not([alt^="background"]))) {
+    @apply grid gap-x-12;
     grid-template-rows: auto 1fr;
 
     > table {
@@ -189,6 +188,34 @@ main > section {
 
     > pre:not(:nth-child(2)) {
       @apply ml-4 mr-0;
+    }
+
+    > hr {
+      @apply hidden;
+    }
+
+    > *:has(~ hr) {
+      @apply col-start-1 col-end-2;
+    }
+
+    > hr ~ * {
+      @apply col-start-2 col-end-3;
+    }
+
+    hr + * {
+      @apply row-start-2 row-end-3;
+    }
+
+    hr + * + * {
+      @apply row-start-3 row-end-4;
+    }
+
+    hr + * + * + * {
+      @apply row-start-4 row-end-5;
+    }
+
+    hr + * + * + * + * {
+      @apply row-start-5 row-end-6;
     }
 
     &:has(> :last-child:nth-child(4)) {
@@ -327,9 +354,5 @@ main > section {
 
   a {
     @apply font-semibold text-[--z-heading] underline underline-offset-2 [text-decoration-thickness:2px];
-  }
-
-  hr {
-    @apply border-t-[--z-tbody-border];
   }
 }
