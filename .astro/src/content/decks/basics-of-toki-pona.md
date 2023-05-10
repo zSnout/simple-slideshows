@@ -156,4 +156,27 @@ Add _ala_ as a modifier to negate a word.
 - _mi moku ala._ **I'm not eating.**
 - _jan ala li soweli._ **No people are animals.**
 - _sina jo ala e telo._ **You don't have water.**
-- _sina jo ala e telo._ **You don't have water.**
+- _jan mute li jo e moku._ **Many people have food.**
+
+## Preverbs
+
+| Word    | Definition                 |
+| ------- | -------------------------- |
+| wile    | to want, to need           |
+| lukin   | to look at, to try to      |
+| ken     | possible, to be able to    |
+| sona    | knowledge, to know         |
+| kama    | coming, future, event      |
+| sitelen | picture, to write, to draw |
+
+Preverbs can be placed before a main verb to modify the verb's meaning.
+
+- _mi moku._ **I eat.**
+- _mi ken moku._ **I can eat.**
+- _sina sona lape._ **You know how to sleep.**
+- _sina kama sona lape._  
+  **You're learning how to sleep.**
+- _ona li lukin sitelen._ **He tries to write.**
+- _ona li wile moku._ **She's hungry.**
+
+<!-- Source: https://devurandom.xyz/tokipona/10 -->
