@@ -220,6 +220,26 @@ main > section {
         @apply row-end-6;
       }
     }
+
+    &:has(:last-child:nth-child(7)) {
+      grid-template-rows: auto auto auto auto auto 1fr;
+
+      > table,
+      > pre,
+      > p:has(img:not([alt^="background"])) {
+        @apply row-end-7;
+      }
+    }
+
+    &:has(:last-child:nth-child(8)) {
+      grid-template-rows: auto auto auto auto auto auto 1fr;
+
+      > table,
+      > pre,
+      > p:has(img:not([alt^="background"])) {
+        @apply row-end-8;
+      }
+    }
   }
 
   &:where(:has(h2)) > section:has(> eqn) {
