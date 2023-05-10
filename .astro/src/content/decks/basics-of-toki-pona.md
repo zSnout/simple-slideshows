@@ -479,25 +479,118 @@ and is not required.
 _tenpo_ clauses are often used before _la_ to indicate time.
 
 - _tenpo pini, la mi moku._  
-  **In the context of a finished time, I eat.**  
   **In the past, I eat.**  
   **I ate.**
 
 - _tenpo kama, la mi moku._  
-  **In the context of a coming time, I eat.**  
   **In the future, I eat.**  
   **I will eat.**
 
 - _tenpo ni, la mi moku._  
-  **In the context of this time, I eat.**  
-  **Now, I eat.**
-
-## Simple Numbers
-
-## Advanced Numbers
-
-## Ordinals
+  **In this time, I eat.**  
+  **I'm eating.**
 
 ## Complex Sentences
 
+<div class="flex flex-col gap-6">
+
+Some English sentences turn into two sentences when translated to toki pona.
+
+When the first sentence ends with _e ni_ and is connected to the second, you
+must join them with a colon instead of a period.
+
+- _mi wile e ni: sina tawa tomo mi._  
+  **I want this: you go to my house.**  
+  **I want you to visit me.**
+
+- _sina sona e ni: mi toki e toki pona._  
+  **You know that I speak toki pona.**
+
+</div>
+
+---
+
+<div class="flex flex-col gap-6">
+
+Sometimes, you can use _pi_ instead of splitting a sentence in two. It's a
+matter of personal preference. Note the differences between these two:
+
+- _mi jo e soweli. ona li toki e toki Inli._  
+  **I have a dog. It speaks English.**
+
+- _mi jo e soweli pi toki Inli._  
+  **I have a dog of English-speaking.**
+
+</div>
+
+## Simple Numbers
+
+| Word                | Definition                |
+| ------------------- | ------------------------- |
+| _ala_               | 0, none, nothing, not     |
+| _wan_               | 1, united, unique, single |
+| _tu_                | 2, split                  |
+| _mute_              | 3+, many, multiple        |
+| _ale_<br>alt. _ali_ | ∞, all, everything        |
+
+toki pona's simplest numbering system uses the numbers on the left.
+
+- _soweli ala,_ **no leopards**
+- _lipu tu,_ **two books**
+- _kala ale,_ **all the fish**
+- _kalama mute_, **six sounds**, **many sounds**
+
+## Advanced Numbers
+
+| Word                | Value |
+| ------------------- | ----- |
+| _ala_               | 0     |
+| _wan_               | 1     |
+| _tu_                | 2     |
+| _luka_              | 5     |
+| _mute_              | 20    |
+| _ale_<br>alt. _ali_ | 100   |
+
+toki pona's advanced numbering system uses the numbers on the left. To add two
+numbers, append them to each other.
+
+- _soweli ala,_ **0 leopards**
+- _lipu tu,_ **2 books**
+- _kala ale,_ **100 fish**
+- _kalama mute luka_, **25 sounds**
+- _ma luka tu_, **7 countries**
+- _telo tu wan_, **3 drinks**
+
+## Ordinals
+
+| Word    | Definition        |
+| ------- | ----------------- |
+| _nanpa_ | number, ordinal   |
+| _nasin_ | way, path, street |
+
+To name ordinals, such as "2nd" or "7th", write _nanpa_ followed by the number.
+You don't need to write _pi_ before a _nanpa_ clause.
+
+- _mi lon nanpa tu wan._ **I'm in third place.**
+- _sina tawa nasin nanpa mute tu tu._  
+  **You're going to 24th street.**
+- _ni li kili nanpa luka tu._ **This is the 7th apple.**
+- _ona li jan nanpa ale tu._ **He's the 102nd person.**
+
 ## Interjections
+
+| Word | Definition                |
+| ---- | ------------------------- |
+| _a_  | emotion word, exclamation |
+| _mu_ | animal noise              |
+
+The interjection _a_ can be used after any noun phrase or sentence to emphasize
+it. On its own, it represents a generic exclamation.
+
+- _a!_ **Wow!**
+- _a a a!_ **Ha ha ha!**
+- _sina suli a!_ **You're so tall!**
+
+The interjection _mu_ means any animal noise. It can be a sentence on its own.
+
+- _mu!_ **Moo!** **Bark!** **Quack!**
