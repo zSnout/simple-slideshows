@@ -1,6 +1,6 @@
-# Features of This Project
+# Features of this project
 
-A tool for creating beautiful slideshows from Markdown content.
+An overview of different slide types.
 
 ## An example slide
 

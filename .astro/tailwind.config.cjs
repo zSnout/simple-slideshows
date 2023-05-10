@@ -12,9 +12,10 @@ module.exports = {
             "--z-pre-bg": api.theme(`colors.${name}.800`),
             "--z-preview-bg": api.theme(`colors.${name}.800`),
 
+            "--z-heading": api.theme(`colors.${name}.900`),
             "--z-body": api.theme(`colors.${name}.600`),
             "--z-pre": api.theme(`colors.${name}.200`),
-            "--z-heading": api.theme(`colors.${name}.900`),
+            "--z-preview": api.theme(`colors.${name}.200`),
             "--z-ul-bullet": api.theme(`colors.${name}.300`),
             "--z-ol-bullet": api.theme(`colors.${name}.400`),
 
@@ -23,10 +24,13 @@ module.exports = {
           },
           [".z-" + name + "-dark"]: {
             "--z-bg": api.theme(`colors.${name}.900`),
+            "--z-pre-bg": api.theme(`colors.${name}.800`),
             "--z-preview-bg": api.theme(`colors.${name}.800`),
 
             "--z-heading": api.theme(`colors.${name}.100`),
             "--z-body": api.theme(`colors.${name}.300`),
+            "--z-pre": api.theme(`colors.${name}.200`),
+            "--z-preview": api.theme(`colors.${name}.200`),
             "--z-ul-bullet": api.theme(`colors.${name}.600`),
             "--z-ol-bullet": api.theme(`colors.${name}.600`),
 
