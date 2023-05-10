@@ -36,7 +36,15 @@ main > section {
   }
 
   & p:has(img[alt^="background"]) {
-    display: contents;
+    @apply contents;
+  }
+
+  & p:has(img:only-child:not([alt^="background"])) {
+    @apply block;
+  }
+
+  & p img:only-child:not([alt^="background"]) {
+    @apply max-h-full;
   }
 
   & img[alt^="background"] {
@@ -112,13 +120,35 @@ main > section {
     grid-template-columns: 40% auto;
   }
 
-  &:where(:has(h2):has(table, pre)) {
+  & img:not([alt^="background"]) {
+    @apply rounded-lg;
+  }
+
+  &:where(:has(h2):has(img:not([alt^="background"]))) {
+    @apply gap-x-12;
+    grid-template-columns: auto 1fr;
+  }
+
+  &:where(:has(h2):has(img:not([alt^="background"]):not(p:nth-child(2) img))) {
+    grid-template-columns: 1fr auto;
+  }
+
+  &:where(:has(h2):has(table, pre)) > h2 {
+    @apply col-start-1 col-end-3 row-start-1 row-end-2;
+  }
+
+  &:where(:has(h2):has(img:not([alt^="background"]))) > h2 {
+    @apply col-start-1 col-end-3 row-start-1 row-end-2;
+  }
+
+  &:where(:has(h2):has(img:not([alt^="background"]):not(p:nth-child(2) img)))
+    > h2 {
+    @apply col-start-1 col-end-2 row-start-1 row-end-2;
+  }
+
+  &:where(:has(h2):has(table, pre, img:not([alt^="background"]))) {
     @apply grid;
     grid-template-rows: auto 1fr;
-
-    > h2 {
-      @apply col-start-1 col-end-3 row-start-1 row-end-2;
-    }
 
     > table {
       @apply mb-8 ml-16 mr-10 mt-10;
@@ -129,17 +159,35 @@ main > section {
     }
 
     > table,
+    > pre,
+    > p:has(img:not([alt^="background"])) {
+      @apply col-start-1 col-end-2 row-end-3;
+    }
+
+    > table,
     > pre {
-      @apply col-start-1 col-end-2 row-start-2 row-end-3;
+      @apply row-start-2;
+    }
+
+    > p:has(img:not([alt^="background"])) {
+      @apply row-start-2;
+    }
+
+    > p:has(img:not([alt^="background"])):not(:nth-child(2)) {
+      @apply row-start-1;
+    }
+
+    > table:not(:nth-child(2)),
+    > pre:not(:nth-child(2)),
+    > p:has(img:not([alt^="background"])):not(:nth-child(2)) {
+      @apply col-start-2 col-end-3;
     }
 
     > table:not(:nth-child(2)) {
-      @apply col-start-2 col-end-3;
       @apply ml-10 mr-16;
     }
 
     > pre:not(:nth-child(2)) {
-      @apply col-start-2 col-end-3;
       @apply ml-4 mr-0;
     }
 
@@ -147,7 +195,8 @@ main > section {
       grid-template-rows: auto auto 1fr;
 
       > table,
-      > pre {
+      > pre,
+      > p:has(img:not([alt^="background"])) {
         @apply row-end-4;
       }
     }
@@ -156,7 +205,8 @@ main > section {
       grid-template-rows: auto auto auto 1fr;
 
       > table,
-      > pre {
+      > pre,
+      > p:has(img:not([alt^="background"])) {
         @apply row-end-5;
       }
     }
@@ -165,7 +215,8 @@ main > section {
       grid-template-rows: auto auto auto auto 1fr;
 
       > table,
-      > pre {
+      > pre,
+      > p:has(img:not([alt^="background"])) {
         @apply row-end-6;
       }
     }
@@ -228,13 +279,13 @@ main > section {
   ol {
     @apply pl-8 text-lg;
 
-    &:has(h3, li > p:not(:only-child) > strong) {
-      li {
+    &:has(h3, br, ul, ol) {
+      > li {
         @apply mb-4 last:mb-0;
       }
     }
 
-    li {
+    > li {
       @apply mb-1 px-1 last:mb-0;
 
       h3,
