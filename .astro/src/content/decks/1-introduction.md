@@ -78,7 +78,7 @@ verbs.
 | _ilo_    | tool                |
 | _ni_     | this, that          |
 | _ona_    | he, she, they       |
-| _soweli_ | animal, land mammal |
+| _soweli_ | animal la,nd mammal |
 | _lili_   | small               |
 | _suli_   | big, important      |
 
@@ -191,7 +191,7 @@ are only 5 rules:
 | _jan_    | person, people              |
 | _ma_     | land                        |
 | _toki_   | language, to speak          |
-| _soweli_ | animal, land mammal         |
+| _soweli_ | animal la,nd mammal         |
 | _waso_   | bird, flying creature       |
 | _kala_   | fish, sea creature, aquatic |
 | _kulupu_ | group                       |
@@ -330,6 +330,28 @@ _tawa_ is often used to show perspective and opinions.
 - _sina ike tawa mi._ **I don't like you.**
 - _moku ni li pona tawa mi._ **I like this food.**
 
+## _taso_
+
+| Word    | Definition               |
+| ------- | ------------------------ |
+| _taso_  | but, however; only, just |
+| _wan_   | single, united, one      |
+| _pilin_ | heart, feeling, to feel  |
+
+Like all words, _taso_ can be used as a modifier.
+
+- _mi jo e soweli wan._ **I have one pet.**
+- _mi taso jo e soweli wan._ **I only have one pet.**
+
+But _taso_ can also appear at the beginning of a sentence to mean "but" or
+"however".
+
+- _mi pona. taso, mi pilin pona ala._  
+  **I'm good, but I'm not happy.**
+
+Some people write a comma before or after _taso_. This is a matter of personal
+preference, and isn't required.
+
 ## A-or-B Questions
 
 | Word   | Definition                 |
@@ -450,19 +472,18 @@ To simultaneously address someone and issue a command, you can merge the two
 
 ## _la_
 
-| Word    | Definition                                          |
-| ------- | --------------------------------------------------- |
-| _la_    | (separates a context phrase<br>and a main sentence) |
-| _pilin_ | heart, feeling, to feel                             |
+| Word | Definition                                          |
+| ---- | --------------------------------------------------- |
+| _la_ | (separates a context phrase<br>and a main sentence) |
 
 _la_ allows you to add context to sentences.
 
 - _X la Y._  
   **When X, then Y.**  
   **In the context of X, Y.**
-- _mi lape, la ale li pona._  
+- _mi lape la, ale li pona._  
   **When I sleep, everything is okay.**
-- _ma Awawi, la mi pilin pona._  
+- _ma Awawi la, mi pilin pona._  
   **In Hawaii, I'm happy.**
 
 Some people add a comma before or after _la_. This is a matter of personal style
@@ -478,15 +499,15 @@ and is not required.
 
 _tenpo_ clauses are often used before _la_ to indicate time.
 
-- _tenpo pini, la mi moku._  
+- _tenpo pini la, mi moku._  
   **In the past, I eat.**  
   **I ate.**
 
-- _tenpo kama, la mi moku._  
+- _tenpo kama la, mi moku._  
   **In the future, I eat.**  
   **I will eat.**
 
-- _tenpo ni, la mi moku._  
+- _tenpo ni la, mi moku._  
   **In this time, I eat.**  
   **I'm eating.**
 
