@@ -1,6 +1,6 @@
-# Basics of toki pona
+# Introduction to toki pona
 
-An introduction to the language.
+An introduction to the world's simplest language.
 
 ## What is toki pona?
 
