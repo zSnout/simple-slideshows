@@ -188,12 +188,12 @@ See [Introduction to toki pona](/1-introduction) for a review.
 
 ## Prepositions
 
-| Word      | Definition                                                                    |
-| --------- | ----------------------------------------------------------------------------- |
-| _kepeken_ | to use, with, by means of                                                     |
-| _lon_     | located at, present at, real, true, existing<br>alt. (affirmative response)   |
-| _tan_     | by, from, because of; origin, cause                                           |
-| _tawa_    | going to, toward; for; from the perspective of; moving<br>alt. (pv.) going to |
+| Word      | Definition                                                                  |
+| --------- | --------------------------------------------------------------------------- |
+| _kepeken_ | to use, with, by means of                                                   |
+| _lon_     | located at, present at, real, true, existing<br>alt. (affirmative response) |
+| _tan_     | by, from, because of; origin, cause                                         |
+| _tawa_    | going to, toward; for; from the perspective of; moving<br>preverb. going to |
 
 - _mi tawa sina._  
   **I'm going to you.**
@@ -268,11 +268,11 @@ See [Introduction to toki pona](/1-introduction) for a review.
 | _anu_  | or<br>alt. choose, decide                                           |
 | _seme_ | what? which?                                                        |
 
-- _jan seme li jo e lipu?_  
-  **Who has my book?**
+- _jan seme li lanpan e kala mi?_  
+  **Who took my fish?**
 
-- _ni li lipu anu sitelen?_  
-  **Is that a book, or a drawing?**
+- _ni li lukin pona ala lukin pona?_  
+  **Is this pretty?**
 
 - _ona li pona ala pona?_  
   **Is he good?**
@@ -307,6 +307,34 @@ See [Introduction to toki pona](/1-introduction) for a review.
 - _ona li meli anu mije anu tonsi?_  
   **Are they female, male, or non-binary?**
 
+## Time
+
+| Word    | Definition                                                                       |
+| ------- | -------------------------------------------------------------------------------- |
+| _kama_  | arriving, coming, future, summoned;<br>preverb. to become, manage to, succeed in |
+| _pini_  | ago, completed, ended, finished, past                                            |
+| _tenpo_ | time, duration, moment, occasion, period, situation                              |
+
+- _tenpo kama la, mi tawa kepeken soweli._  
+  **In the future, I walk with the dog.**  
+  **I will walk with the dog.**
+
+- _tenpo pini lili la, sina lon tomo mi._  
+  **A little while ago, you were at my house.**
+
+- _seli li lon._  
+  **It's hot.**
+
+- _seli li lon tenpo pini._  
+  **It was hot.**
+
+- _tenpo kama suli la, mi lon ala._  
+  **A long time ago, I didn't exist.**
+
+## Directions
+
+## Colors
+
 <!-- Pre-created Markdown rows
 
 | _kin_ | indeed, too, also, as well |
@@ -339,7 +367,7 @@ See [Introduction to toki pona](/1-introduction) for a review.
 
 
 
-| _alasa_ | to hunt, forage, seek<br>alt. (pv.) try to, attempt |
+| _alasa_ | to hunt, forage, seek<br>preverb. try to, attempt |
 
 | _anpa_ | bowing down, downward, humble, lowly, dependent<br>alt. bottom, lower part, under, below, floor, beneath; low, lower, bottom, down |
 
@@ -347,7 +375,7 @@ See [Introduction to toki pona](/1-introduction) for a review.
 
 
 
-| _awen_ | enduring, kept, protected, safe, waiting, staying; (pv.) to continue to, to keep |
+| _awen_ | enduring, kept, protected, safe, waiting, staying<br>preverb. to continue to, to keep |
 
 
 
@@ -357,7 +385,7 @@ See [Introduction to toki pona](/1-introduction) for a review.
 
 | _jelo_ | yellow, yellowish |
 
-| _kama_ | arriving, coming, future, summoned; (pv.) to become, manage to, succeed in |
+
 
 | _kasi_ | plant, vegetation; herb, leaf |
 
@@ -385,7 +413,7 @@ See [Introduction to toki pona](/1-introduction) for a review.
 
 | _luka_ | arm, hand, tactile organ; five<br>alt. touch/feel physically, interact, press |
 
-| _lukin_ | eye; look at, see, examine, observe, read, watch; look for, seek; (pv.) try to |
+| _lukin_ | eye; look at, see, examine, observe, read, watch; look for, seek<br>preverb. try to |
 
 | _lupa_ | door, hole, orifice, window |
 
@@ -415,7 +443,7 @@ See [Introduction to toki pona](/1-introduction) for a review.
 
 | _olin_ | love, have compassion for, respect, show affection to |
 
-| _open_ | begin, start; open; turn on |
+
 
 | _pakala_ | botched, broken, damaged, harmed, messed up<br>alt. (curse expletive, e.g. fuck!) |
 
@@ -429,7 +457,7 @@ See [Introduction to toki pona](/1-introduction) for a review.
 
 | _pimeja_ | black, dark, unlit |
 
-| _pini_ | ago, completed, ended, finished, past |
+
 
 | _poka_ | hip, side; next to, nearby, vicinity<br>alt. along with (comitative), beside |
 
@@ -455,7 +483,7 @@ See [Introduction to toki pona](/1-introduction) for a review.
 
 | _sitelen_ | image, picture, representation, symbol, mark, writing |
 
-| _sona_ | know, be skilled in, be wise about, have information on; (pv.) know how to |
+| _sona_ | know, be skilled in, be wise about, have information on<br>preverb. know how to |
 
 | _suno_ | sun; light, brightness, glow, radiance, shine; light source |
 
@@ -463,7 +491,7 @@ See [Introduction to toki pona](/1-introduction) for a review.
 
 | _taso_ | but, however; only |
 
-| _tenpo_ | time, duration, moment, occasion, period, situation |
+
 
 | _tu_ | two<br>alt. separate, cut |
 
