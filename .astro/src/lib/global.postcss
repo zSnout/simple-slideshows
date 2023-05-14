@@ -1,0 +1,55 @@
+li {
+  /*
+    The code below highlights pairs of toki pona/English translations that
+    should have the translation markers {}, [], and {{}}, but don't, in a very
+    bright red. This can help when adding these markers to new presentations.
+  */
+
+  /* &:has(p):has(em):has(strong):has(br):not(:has(span)) {
+    @apply bg-red-500;
+  } */
+
+  > p span {
+    @apply -mx-[0.0625rem] cursor-pointer px-[0.0625rem] py-0.5 transition;
+  }
+
+  > p span:has(span) {
+    @apply -mx-0.5 px-0.5;
+  }
+
+  > p span span {
+    @apply mx-0 px-0 py-0;
+  }
+
+  > p span.active {
+    @apply bg-yellow-300 transition-none;
+
+    &[index="1"] {
+      @apply bg-cyan-300;
+    }
+
+    &[index="2"] {
+      @apply bg-pink-300;
+    }
+
+    &[index="3"] {
+      @apply bg-lime-300;
+    }
+  }
+
+  > p span.active:has(span) {
+    @apply bg-yellow-200;
+
+    &[index="1"] {
+      @apply bg-cyan-200;
+    }
+
+    &[index="2"] {
+      @apply bg-pink-200;
+    }
+
+    &[index="3"] {
+      @apply bg-lime-200;
+    }
+  }
+}
