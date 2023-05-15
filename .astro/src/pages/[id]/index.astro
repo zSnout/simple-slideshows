@@ -5,7 +5,7 @@ import PresentationTypeLink from "../../components/PresentationTypeLink.astro"
 
 const entry = (await getEntryBySlug("decks", Astro.params.id!))!
 const headings = (await entry.render()).headings
-const title = headings[0]?.text || "Untitled deck"
+const title = entry.data.title || headings[0]?.text || "Untitled deck"
 
 export async function getStaticPaths() {
   const slides = await getCollection("decks")
@@ -14,7 +14,7 @@ export async function getStaticPaths() {
 }
 ---
 
-<Layout title={title}>
+<Layout deck={entry} title={title}>
   <h1 class="mb-12 text-6xl font-light text-slate-100">{title}</h1>
 
   <div class="mx-auto flex w-full max-w-md flex-wrap gap-8">

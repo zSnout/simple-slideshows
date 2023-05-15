@@ -8,7 +8,7 @@ const highlighter = await getHighlighter({ theme: "github-light" })
 
 const entry = (await getEntryBySlug("decks", Astro.params.id!))!
 const headings = (await entry.render()).headings
-const title = headings[0]?.text || "Untitled deck"
+const title = entry.data.title || headings[0]?.text || "Untitled deck"
 
 export async function getStaticPaths() {
   const slides = await getCollection("decks")
@@ -17,7 +17,7 @@ export async function getStaticPaths() {
 }
 ---
 
-<Layout title={title}>
+<Layout deck={entry} title={title}>
   <div
     class="relative flex min-h-screen flex-col justify-center overflow-hidden bg-gray-50 py-8 lg:py-12"
   >

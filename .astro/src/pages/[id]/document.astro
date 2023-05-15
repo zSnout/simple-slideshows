@@ -6,7 +6,7 @@ import { convertToHTMLWithoutSections } from "../../lib/md-to-html"
 
 const entry = (await getEntryBySlug("decks", Astro.params.id!))!
 const headings = (await entry.render()).headings
-const title = headings[0]?.text || "Untitled deck"
+const title = entry.data.title || headings[0]?.text || "Untitled deck"
 const html = entry && convertToHTMLWithoutSections(entry.body)
 
 export async function getStaticPaths() {
@@ -16,7 +16,7 @@ export async function getStaticPaths() {
 }
 ---
 
-<Layout title={title}>
+<Layout deck={entry} title={title}>
   {/* Source: https://play.tailwindcss.com/uj1vGACRJA */}
 
   <div

@@ -1,0 +1,24 @@
+---
+import HomepageEntry from "./HomepageEntry.astro"
+
+interface Props {
+  category: string | undefined
+  entries: { slug: string; title: string }[]
+}
+---
+
+{
+  Astro.props.entries.length ? (
+    <div class="peer mx-auto flex max-w-prose flex-col gap-1 peer-[]:mt-12">
+      {Astro.props.category && (
+        <h2 class="mb-1 px-3 text-xl text-[--z-preview]">
+          {Astro.props.category}
+        </h2>
+      )}
+
+      {Astro.props.entries.map((entry) => (
+        <HomepageEntry href={"/" + entry.slug} title={entry.title} />
+      ))}
+    </div>
+  ) : null
+}

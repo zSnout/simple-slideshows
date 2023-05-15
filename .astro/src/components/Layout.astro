@@ -1,7 +1,9 @@
 ---
+import type { CollectionEntry } from "astro:content"
 import "../lib/global.postcss"
 
 interface Props {
+  deck: CollectionEntry<"decks"> | undefined
   title: string
 }
 ---

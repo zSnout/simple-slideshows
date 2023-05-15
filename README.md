@@ -90,6 +90,36 @@ and modifying the styles included in it.
 To change the title and subtitle shown on your project's homepage, edit their
 respective variables in `.env`.
 
+## Slideshow meta-information
+
+To add meta information to a slideshow, use simple YAML metadata.
+
+```md
+---
+key_1: true
+key_2: hello world
+---
+
+...
+```
+
+Currently, slideshows can adjust these options. More may be added in future
+updates to Simple Slideshows.
+
+```yaml
+# Assigns the slideshow a category. This is
+# visible on the homepage of your site.
+category: Your category here
+
+# Hides a slideshow from the homepage. It
+# will still be accessible through URLs.
+hidden: true
+
+# Overrides the default title of your
+# slideshow with a manual one.
+title: Your slideshow title
+```
+
 ## Publishing to Vercel and Netlify
 
 To make working with the repo more ergonomic, the main Astro project underlying
