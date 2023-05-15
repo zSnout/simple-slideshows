@@ -8,7 +8,7 @@ import "../../lib/theme.postcss"
 
 const entry = (await getEntryBySlug("decks", Astro.params.id!))!
 const headings = (await entry.render()).headings
-const title = headings[0]?.text || "Untitled deck"
+const title = entry.data.title || headings[0]?.text || "Untitled deck"
 const html = entry && convertToHTML(entry.body)
 
 export async function getStaticPaths() {
@@ -18,7 +18,7 @@ export async function getStaticPaths() {
 }
 ---
 
-<Layout title={title} set:html={html} />
+<Layout deck={entry} title={title} set:html={html} />
 
 <style is:global>
   html {

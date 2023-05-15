@@ -16,6 +16,7 @@ module.exports = {
             "--z-body": api.theme(`colors.${name}.600`),
             "--z-pre": api.theme(`colors.${name}.200`),
             "--z-preview": api.theme(`colors.${name}.200`),
+            "--z-preview-subtitle": api.theme(`colors.${name}.400`),
             "--z-ul-bullet": api.theme(`colors.${name}.300`),
             "--z-ol-bullet": api.theme(`colors.${name}.400`),
 
@@ -31,6 +32,7 @@ module.exports = {
             "--z-body": api.theme(`colors.${name}.300`),
             "--z-pre": api.theme(`colors.${name}.200`),
             "--z-preview": api.theme(`colors.${name}.200`),
+            "--z-preview-subtitle": api.theme(`colors.${name}.400`),
             "--z-ul-bullet": api.theme(`colors.${name}.600`),
             "--z-ol-bullet": api.theme(`colors.${name}.600`),
 
